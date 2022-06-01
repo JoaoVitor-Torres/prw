@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset= "UTF-8">
+    <meta http-equiv= "X-UA-Compatible" coontent="IE-edge">
+    <meta name= "viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Agenda</title>
+</head>
+<body>
+    <h2> Agenda- IFSP</h2>
+
+    <form method = "post" action = "cadastro_agenda.php" enctype="multipart/form-data">
+        <div>
+            <label for="">Digite seu Nome: </label>
+            <input type= "nome" size="50" name="nome" id= "nome">
+        </div>
+        
+        <div>
+            <label for="">Digite seu Apelido: </label>
+            <input type= "apelido" size="50" name="apelido" id= "apelido">
+        </div>
+
+        <div>
+            <label for="">Digite seu Endereço: </label>
+            <input type= "endereco" size="50" name="endereco" id= "endereco">
+        </div>
+
+        <div>
+            <label for="">Digite seu Bairro: </label>
+            <input type= "bairro" size="50" name="bairro" id= "bairro">
+        </div>
+        
+        <div>
+            <label for="">Digite sua Cidade: </label>
+            <input type= "cidade" size="50" name="cidade" id= "cidade">
+        </div>
+
+        
+        <div class="form-item">
+            <label for="estado">Estado:</label>
+            <select name="estado">
+                <option value="AC">AC</option>
+                <option value="AL">AL</option>
+                <option value="AP">AP</option>
+                <option value="AM">AM</option>
+                <option value="BA">BA</option>
+                <option value="CE">CE</option>
+                <option value="ES">ES</option>
+                <option value="GO">GO</option>
+                <option value="MA">MA</option>
+                <option value="MT">MT</option>
+                <option value="MS">MS</option>
+                <option value="MG">MG</option>
+                <option value="PA">PA</option>
+                <option value="PB">PB</option>
+                <option value="PR">PR</option>
+                <option value="PE">PE</option>
+                <option value="PI">PI</option>
+                <option value="RJ">RJ</option>
+                <option value="RN">RN</option>
+                <option value="RS">RS</option>
+                <option value="RO">RO</option>
+                <option value="RR">RR</option>
+                <option value="SC">SC</option>
+                <option value="SP">SP</option>
+                <option value="SE">SE</option>
+                <option value="TO">TO</option>
+                <option value="DF">DF</option>
+                                                                
+            </select>
+        </div>
+        Digite seu Telefone: <input type= "telefone" size="50" name="telefone"  id= "telefone"> <br>
+        Digite seu Celular: <input type= "celular" size="50" name="celular"  id= "celular"> <br>
+        Digite seu E-mail: <input type= "email" size="50" name="email"  id= "email"> <br>
+        <input type="file" name="foto" id="foto" accept="image/*">
+        <div>
+            <button type="submit">Enviar</button>
+        </div>
+
+</form>
+</body>
+</html>

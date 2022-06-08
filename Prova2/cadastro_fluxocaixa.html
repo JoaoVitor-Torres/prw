@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset= "UTF-8">
+    <meta http-equiv= "X-UA-Compatible" coontent="IE-edge">
+    <meta name= "viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Fluxo Caixa</title>
+</head>
+<body>
+    <h2> Fluxo Caixa- IFSP AVALIAÇÃO</h2>
+
+    <form method = "post" action = "cadastro_fluxocaixa.php" enctype="multipart/form-data">
+        <div>
+            <label for="">Insira a data: </label>
+            <input type= "date" size="50" name="data" id= "data">
+        </div>
+        
+        <div>
+            <label for="">Insira o tipo (entrada/saida): </label>
+            <input type= "tipo" size="50" name="tipo" id= "tipo">
+        </div>
+
+        <div>
+            <label for="">Insira o valor R$: </label>
+            <input type= "valor" size="50" name="valor" id= "valor">
+        </div>
+
+        <div>
+            <label for="">Histórico: </label>
+            <input type= "historico" size="50" name="historico" id= "historico">
+        </div>
+        
+        <div>
+            <label for="">Insirir cheque? (sim/não): </label>
+            <input type= "cheque" size="50" name="cheque" id= "cheque">
+        </div>
+
+            <button type="submit">Enviar</button>
+        </div>
+
+</form>
+</body>
+</html>

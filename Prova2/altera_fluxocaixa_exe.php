@@ -11,28 +11,15 @@
     echo "<h1> Alteração de dados </h1>";
     echo "<p> Data Fluxo de Caixas: " . $data . "<p>";
     
-	if(strlen($fotoNome)>0){
-        $sql = "UPDATE fluxocaixa SET
-            data='".$data."',
-            tipo='".$tipo."',
-            valor='".$valor."',
-            historico='".$historico."',
-            cheque='".$cheque."',
-            foto_blob='".$fotoblob."',
-            foto_nome='".$fotonome."'
-            WHERE id_fluxocaixa=".$id_fluxocaixa;
-      }
-      else
-      {
-
+	
 	$sql = "UPDATE fluxocaixa SET
             data='".$data."',
             tipo='".$tipo."',
             valor='".$valor."',
             historico='".$historico."',
-            cheque='".$cheque."',
+            cheque='".$cheque."'
           WHERE id_fluxocaixa=".$id_fluxocaixa;
-      }
+     
 	$result = mysqli_query($con, $sql);
 	if($result)
 		echo "Dados alterados com sucesso <br>";

@@ -13,7 +13,7 @@
         <ul>
             <li><a href="cadastro_fluxocaixa.html"> Cadastrar o fluxo de caixa</a></li>
             <li><a href="listar_fluxocaixa.php"> Listar o fluxo de caixa</a></li>
-            <li><a href="consulta_fluxocaixa.php"> Consultar o fluxo de caixa</a></li>
+            <li><a href="consulta_fluxocaixa.html"> Consultar o fluxo de caixa</a></li>
         </ul>
     </div>
 </body>

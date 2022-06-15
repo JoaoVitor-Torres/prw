@@ -4,26 +4,32 @@
     <meta charset= "UTF-8">
     <meta http-equiv= "X-UA-Compatible" coontent="IE-edge">
     <meta name= "viewport" content="width=device-width, initial-scale=1.0">
-
-	<title> Consulta de Fluxo de Caixa</title>
+    <title>Consulta do fluxo de Caixa0</title>
+    <style>
+        fieldset {
+            width: 500px;
+            background-color: cornflowerblue;
+        }
+    </style>
 </head>
 <body>
-    <h2> Consulta de Fluxo de Caixa- IFSP AVALIAÇÃO</h2>
+    <form action="consulta_fluxocaixa.php" method="post"> 
+    <div>
+        <h3> Consulta de Fluxo de Caixa- IFSP AVALIAÇÃO</h3>
+        <fieldset>
+            <div>
+                <label for="tipo">Tipo de consulta: </label>
+                <input type="radio" name="tipo" value= "total"><label for="entrada">Saldo total: </label>
+                <input type="radio" name="tipo" value= "saida"><label for="saida">Total saídas </label>
+                <input type="radio" name="tipo" value= "entrada"><label for="entrada">Total entradas </label>
+            </div>
+            <div>
 
-    <form method = "post" action = "consulta_fluxocaixa.html" enctype="multipart/form-data">
-        <div>
-            <label for="">Saldo Total: </label>
-            <input type= "total" size="50" name="total" id= "total">
-        </div>
-        
-        <div>
-            <label for="">Total Saidas: </label>
-            <input type= "saida" size="50" name="saida" id= "saida">
-        </div>
-
-            <button type="submit">Enviar</button>
-        </div>
-
-</form>
+                <br><div id="botao">
+                <button type="submit">Enviar</button>
+        </fieldset>
+    </div>
+   </div>
+   </form>
 </body>
 </html>

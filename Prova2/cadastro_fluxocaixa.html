@@ -17,8 +17,11 @@
         </div>
         
         <div>
-            <label for="">Insira o tipo (entrada/saida): </label>
-            <input type= "tipo" size="50" name="tipo" id= "tipo">
+            <label>Tipo: </label>
+            <input type="radio" id="tipo" name="tipo" value="entrada">
+            <label for="entrada">Entrada</label>
+            <input type="radio" id="tipo" name="tipo" value="saida">
+            <label for="saida">Saída</label><br>
         </div>
 
         <div>
@@ -32,8 +35,11 @@
         </div>
         
         <div>
-            <label for="">Insirir cheque? (sim/não): </label>
-            <input type= "cheque" size="50" name="cheque" id= "cheque">
+            <label>Insirir cheque? </label>
+            <select name="cheque">
+                <option>sim</option>
+                <option>não</option>
+            </select>
         </div>
 
             <button type="submit">Enviar</button>
